@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Minh Thuận - Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Lê Minh Thuận</div>
+        <div class="nav-links">
+            <a href="#about">Giới thiệu</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact">Liên hệ</a>
+            <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        </div>
+    </nav>
+
+    <header id="about" class="animate-on-scroll">
+        <h1>Xin chào! Mình là Lê Minh Thuận</h1>
+        <p>Sinh viên Công nghệ thông tin | Full-stack Developer tương lai</p>
+    </header>
+
+    <!-- Trang Projects với Grid 6 dự án -->
+    <section id="projects">
+        <h2 class="animate-on-scroll">Dự án nổi bật</h2>
+        <div class="project-grid">
+            <div class="project-card animate-on-scroll">
+                <h3>01. Web Đặt Vé Phim</h3>
+                <p>Hệ thống đặt vé xem phim trực tuyến bằng Java Servlets, JSP và SQL Server.</p>
+            </div>
+            <div class="project-card animate-on-scroll">
+                <h3>02. Todo List JS</h3>
+                <p>Ứng dụng quản lý công việc hàng ngày viết bằng JavaScript ES6 thuần.</p>
+            </div>
+            <div class="project-card animate-on-scroll">
+                <h3>03. Weather Forecast App</h3>
+                <p>Trang dự báo thời tiết thời gian thực kết nối OpenWeatherMap API.</p>
+            </div>
+            <div class="project-card animate-on-scroll">
+                <h3>04. Lab Network Admin</h3>
+                <p>Mô phỏng hạ tầng Windows Server AD DS, GPO và DFS Replication trên VMware.</p>
+            </div>
+            <div class="project-card animate-on-scroll">
+                <h3>05. Crypto Cipher Tool</h3>
+                <p>Công cụ mã hóa và giải mã cổ điển (Caesar, XOR, RSA) giao diện Web.</p>
+            </div>
+            <div class="project-card animate-on-scroll">
+                <h3>06. Personal Web Portfolio</h3>
+                <p>Trang Portfolio cá nhân hoàn chỉnh với Domain riêng và Cloudflare CDN.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Liên hệ với Formspree -->
+    <section id="contact" class="animate-on-scroll">
+        <h2>Liên hệ với mình</h2>
+        <!-- Thay YOUR_FORMSPREE_ID bằng ID trên Formspree.io của bạn -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Lời nhắn:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Nhập lời nhắn của bạn..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Gửi tin nhắn</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lê Minh Thuận. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
